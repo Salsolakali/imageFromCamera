@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.fernana6.imagefromcamera.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Cambiar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        />
+
+    <Button
+        android:id="@+id/btnStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="@id/img"
+        />
 
 </android.support.constraint.ConstraintLayout>
